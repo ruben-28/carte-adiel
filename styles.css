@@ -166,7 +166,7 @@ a:hover {
 /* Section Téfilines */
 .tefilines {
     background-color: #F4EDE1;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -212,7 +212,7 @@ a:hover {
 /* Section Réception */
 .reception {
     background-color: #E9DBC1;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
