@@ -34,9 +34,12 @@ a:hover {
     color: #D4A373;
 }
 
+/* Classe pour désactiver le défilement */
 .no-scroll {
     overflow: hidden;
+    height: 100vh; /* Empêche le défilement vertical */
 }
+
 
 /* Positionner le BSD dans l'angle supérieur droit */
 .bsd {
