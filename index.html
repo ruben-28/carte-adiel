@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Bar Mitsvah Adiel</title>
+</head>
+
+<body>
+    <div id="overlay">
+        <h1 id="overlayCtnt">Bar Mitsvah <br> Adiel Yossef</h1>
+        <a class="btnLink" onclick="hideOverlay(); playMusic();"> 
+            <i class="fa-solid fa-arrow-right"></i>voir l'invitation
+        </a>
+    </div>
+
+    <div class="overView">
+
+        <div class="bsd">
+            <p id="bsd"> בס"ד</p>
+        </div>
+
+        <div class="txt">
+            <h2>
+                David, Jessica <br>
+                Dvir, Zohar et Aviad <br>
+            </h2>
+
+            <p>ont la joie de vous faire part de la Bar Mitsavh de leurs fils et frère <br></p>
+
+            <h1 id="nomFr">
+                Adiel Yossef
+            </h1>
+
+            <h1 id="nomHe">
+                עדיאל יוסף
+            </h1>
+
+            <h3>
+                qui aura lieu le <br>
+                21 Novembre 2024
+            </h3>
+        </div>
+
+    </div>
+
+    <div id="countdown">
+        <div class="text-container">
+            <h2 id="svd">Save The Date</h2>
+            <p id="date">JEUDI 21 novembre 2024</p>
+        </div>
+        <div id="timer">
+            <div class='tag'>
+                <span class='value'>-</span> 
+                <span class='label'>Jours</span>
+            </div>
+            <div class='tag'>
+                <span class='value'>-</span>  
+                <span class='label'>Heures</span>
+            </div>
+            <div class='tag'>
+                <span class='value'>-</span> 
+                <span class='label'>Minutes</span>  
+            </div>
+            <div class='tag'>
+                <span class='value'>-</span> 
+                <span class='label'>Secondes</span>   
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tefilines">
+
+        <div id="en_tete">
+            <img src="images/en_tete_1.png">
+        </div>
+
+        <p id="txt_tef">
+            La mise des téfilines aura lieu bzh' le<br>
+            <b>Jeudi 14 Novembre 2024</b> <br>
+            à 9H30 en la synagogue Ohel Moshe <br> 
+            xxxxxxxxxxxxxxxxxxxx - 7776301 Ashdod, Israel
+        </p>
+        <a href="">Voir l'itineraire</a>
+
+    </div>
+
+    <div class="reception">
+        <div class="header">
+            <h2>Reception</h2>
+        </div>
+
+        <div class="textReception">
+            <p class="text">
+                David et Jessica <br>
+                seraient heureux de vous convier <br>
+                à la fête donnée en l'honneur de <br>
+            </p>
+            <h1 id="nomFr">
+                Adiel Yossef
+            </h1>
+            <p class="text">
+                le Jeudi 21 novembre 2024 à partir de 11H30 <br>
+                dans la salle Gallery 35 <br>
+                Ha-Avoda St 35, Ashdod, 7760018 <br>
+                רח' העבודה 35, אשדוד <br>
+            </p>
+
+            <a href="https://waze.com/ul/hsv8suzkhk" target="_blank"><i id="fleche" class="fa-solid fa-arrow-right"></i>Voir l'itineraire </a>
+
+        </div>
+    </div>
+
+    <div class="RSVP">
+        <div class="header">
+            <h2>Réponse</h2>
+            <h3>Réponse souhaitée dès réception</h3>
+        </div>
+
+        <form id="RSVPform" action="">
+            <div class="responseField">
+                <div class="names">
+                    <input type="text" name="nom" id="nom" placeholder="Nom" required>
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+                </div>
+
+                <div class="checkBoxField">
+                    <input type="checkbox" name="presence" id="presence" value="present">
+                    <label for="presence">Assisteront</label>
+
+                    <input type="checkbox" name="presence" id="absence" value="absent">
+                    <label for="absence">N'assisteront pas</label>
+                </div>
+
+                <div class="nbPers">
+                    <input type="number" name="nbPers" id="nbPers" placeholder="Nombre de personnes" required>
+                </div>
+                <div class="MsgBm">
+                    <textarea name="msg" id="msg" placeholder="Mazal Tov Adiel !!!"></textarea>
+                </div>
+
+            </div>
+
+            <div class="btnField">
+                <button type="submit">Envoyer</button>
+            </div>
+
+        </form>
+    </div>
+
+
+    <script src="js/hideOverlay.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/playMusic.js"></script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'Baguet Script';
+    src: url("fonts/Baguet Script.otf");
+}
+
+@font-face {
+    font-family: 'Ozard_bold';
+    src: url("fonts/Ozard Bold.otf");
+}
+
+/* Styles généraux pour mobile */
+body {
+    font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
+    background-color: #F4EDE1; /* Fond couleur sable */
+    color: #5D4037; /* Couleur du texte marron sable */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #5D4037;
+}
+
+a:hover {
+    color: #D4A373;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Positionner le BSD dans l'angle supérieur droit */
+.bsd {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1em;
+    color: #A67C52;
+}
+
+/* Overlay */
+#overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(244,237,225) ,rgba(212, 163, 115, 1));
+    color: #FFF;
+}
+
+#overlay h1 {
+    font-size: 2em;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+}
+
+.btnLink {
+    margin-top: 20px;
+    background-color: #D4A373;
+    padding: 10px 20px;
+    color: #FFF;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btnLink:hover {
+    background-color: #A67C52;
+}
+
+/* Section générale */
+.overView {
+    gap: 1em;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+
+
+#nomFr{
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 0.5em;
+}
+
+#nomHe{
+    font-family: 'Ozard_bold', cursive;
+    margin-bottom: 1em;
+
+}
+
+.txt h1 {
+    font-size: 2em;
+    color: #5D4037;
+}
+
+.txt h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.txt h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.txt p {
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+/* Styles du compte à rebours */
+#countdown {
+    background-color: #E9DBC1;
+    padding: 15px 0;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-container {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#svd {
+    font-size: 2.5em;
+    font-family: 'Great Vibes', cursive;
+    color: #5D4037;
+}
+
+#timer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.tag .value {
+    font-size: 4em;
+    color: #A67C52;
+}
+
+.tag .label {
+    font-size: 0.9em;
+    color: #5D4037;
+}
+
+/* Section Téfilines */
+.tefilines {
+    background-color: #F4EDE1;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#en_tete {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+}
+
+#en_tete img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#txt_tef {
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin-top: 1.5em;
+    text-align: center;
+
+}
+
+.tefilines a {
+    display: inline-block;
+    margin-top: 1.5em;
+    padding: 10px 15px;
+    background-color: #D4A373;
+    color: white;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.tefilines a:hover {
+    background-color: #A67C52;
+}
+
+/* Section Réception */
+.reception {
+    background-color: #E9DBC1;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.textReception {
+    font-size: 1.5em;
+}
+
+.header h2{
+    margin-top: 0;
+    margin-bottom: 2em;
+    font-size: 2.5em;
+}
+
+.reception h1 {
+    font-size: 2em;
+    margin: 15px 0;
+}
+
+.text{
+    margin-bottom: 1.5em;
+}
+
+.reception a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #D4A373;
+    color: white;
+    border-radius: 5px;
+}
+
+.reception a:hover {
+    background-color: #A67C52;
+}
+
+/* Section RSVP */
+.RSVP {
+    background-color: #F4EDE1;
+}
+
+.RSVP h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#RSVPform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.names input, .checkBoxField input, .nbPers input, .MsgBm textarea {
+    padding: 10px;
+    width: 90%;
+    border: 1px solid #A67C52;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #D4A373;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A67C52;
+}
+
+/* Assurer que toutes les sections prennent la hauteur de l'écran */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Réduire les marges sur les petits écrans */
+@media only screen and (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    #overlay h1 {
+        font-size: 1.8em;
+    }
+
+    .btnLink {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    #countdown .tag .value {
+        font-size: 1.5em;
+    }
+}
