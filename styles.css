@@ -40,6 +40,9 @@ a:hover {
     height: 100vh; /* Empêche le défilement vertical */
 }
 
+i{
+    padding: 0 10px;
+}
 
 /* Positionner le BSD dans l'angle supérieur droit */
 .bsd {
@@ -205,7 +208,7 @@ a:hover {
     background-color: #D4A373;
     color: white;
     border-radius: 5px;
-    width: 30%;
+    
 }
 
 .tefilines a:hover {
