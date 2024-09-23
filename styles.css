@@ -229,13 +229,13 @@ i {
 }
 
 .header h2 {
-    top: 0;
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    font-size: 3em;
+    position: relative;
+    top: 0; /* Assure que le h2 est au sommet */
+    margin-bottom: 0.5em; /* Réduit la marge inférieure */
+    font-size: 3.5em; /* Agrandir la taille de la police */
     color: #333; /* Texte gris foncé */
     text-align: center;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Great Vibes', cursive; /* Police élégante */
 }
 
 .reception h1 {
@@ -274,15 +274,14 @@ i {
 }
 
 .RSVP h2 {
-    top: 0;
-    margin-top: 0.5em;
-
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    position: relative;
+    top: 0; /* Assure que le h2 est au sommet */
+    margin-bottom: 0.5em; /* Réduit la marge inférieure */
+    font-size: 3.5em; /* Agrandir la taille de la police */
     color: #333; /* Texte gris foncé */
+    text-align: center;
+    font-family: 'Great Vibes', cursive; /* Police élégante */
 }
-
-
 
 #RSVPform {
     display: flex;
@@ -296,13 +295,13 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
     
 }
 
-.checkBoxField{
-    margin-top:1em;
-    margin-bottom:2em;
+.checkBoxField {
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
-#msg{
-    height:40%;
+#msg {
+    height: 40%;
 }
 
 .names input, .checkBoxField input, .nbPers input, .MsgBm textarea {
