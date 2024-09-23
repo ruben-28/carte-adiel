@@ -76,6 +76,24 @@ i {
     cursor: pointer;
 }
 
+.btnLink i {
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+.btnLink.animate i {
+    animation: slideArrow 0.5s forwards; /* Lance l'animation quand la classe 'animate' est ajoutée */
+}
+
+@keyframes slideArrow {
+    0% {
+        transform: translateX(0); /* Début à gauche */
+    }
+    100% {
+        transform: translateX(100px); /* Glisse vers la droite */
+    }
+}
+
 .btnLink:hover {
     background-color: #888; /* Plus clair au survol */
 }
