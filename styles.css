@@ -52,14 +52,18 @@ i {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(50, 50, 50, 0.85); /* Fond gris foncé avec transparence */
+    background-image:linear-gradient(rgb(50,50,50),rgba(50, 50, 50, 0.1)), url("images/seferTorah.jpg") ; /* Fond gris foncé avec transparence */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #FFF; /* Texte blanc */
 }
 
 #overlay h1 {
-    font-size: 2em;
+    font-size: 3em;
     line-height: 1.5em;
     letter-spacing: 0.1em;
+    font-family: 'Pinyon Script', cursive;
 }
 
 .btnLink {
