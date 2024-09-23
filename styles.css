@@ -108,7 +108,7 @@ i {
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-    background-image: linear-gradient(rgb(230,230,230), rgba(230,230,230,0.8)),url("images/kotel-vide-6110532.webp") ; /* Fond gris clair */
+    background-image: linear-gradient(rgb(230,230,230), rgba(230,230,230,0.6)),url("images/kotel-vide-6110532.webp") ; /* Fond gris clair */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -188,7 +188,7 @@ i {
 
 /* Section Téfilines */
 .tefilines {
-    background-image: linear-gradient(rgb(230,230,230), rgba(242,242,242,0.8)),url("images/tefilines.jpeg") ; /* Fond gris très clair */
+    background-image: linear-gradient(rgb(230,230,230), rgba(242,242,242,0.6)),url("images/tefilines.jpeg") ; /* Fond gris très clair */
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -236,7 +236,7 @@ i {
 
 /* Section Réception */
 .reception {
-    background-image:linear-gradient(rgb(230,230,230), rgba(230,230,230,0.8)),url("images/gallery35-4-1536x1026.jpg") ; /* Fond gris clair */
+    background-image:linear-gradient(rgb(230,230,230), rgba(230,230,230,0.6)),url("images/gallery35-4-1536x1026.jpg") ; /* Fond gris clair */
     height: 110vh;
     display: flex;
     flex-direction: column;
