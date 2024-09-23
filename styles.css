@@ -108,7 +108,7 @@ i {
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-    background-image: linear-gradient(rgb(230,230,230), rgba(230,230,230,0.6)),url("images/kotel-vide-6110532.webp") ; /* Fond gris clair */
+    background-image: linear-gradient(rgb(230,230,230), rgba(230,230,230,0.4)),url("images/kotel-vide-6110532.webp") ; /* Fond gris clair */
     background-size: cover;
     background-repeat: no-repeat;
 }
