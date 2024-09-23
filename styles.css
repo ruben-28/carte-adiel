@@ -1,18 +1,8 @@
-@font-face {
-    font-family: 'Baguet Script';
-    src: url("fonts/Baguet Script.otf");
-}
-
-@font-face {
-    font-family: 'Ozard_bold';
-    src: url("fonts/Ozard Bold.otf");
-}
-
 /* Styles généraux pour mobile */
 body {
     font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
-    background-color: #F4EDE1; /* Fond couleur sable */
-    color: #5D4037; /* Couleur du texte marron sable */
+    background-color: #F2F2F2; /* Fond gris très clair */
+    color: #333; /* Texte gris foncé */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -27,11 +17,11 @@ h1, h2, h3, p {
 
 a {
     text-decoration: none;
-    color: #5D4037;
+    color: #333; /* Liens gris foncé */
 }
 
 a:hover {
-    color: #D4A373;
+    color: #666; /* Lien gris moyen au survol */
 }
 
 /* Classe pour désactiver le défilement */
@@ -40,7 +30,7 @@ a:hover {
     height: 100vh; /* Empêche le défilement vertical */
 }
 
-i{
+i {
     padding: 0 10px;
 }
 
@@ -50,7 +40,7 @@ i{
     top: 10px;
     right: 10px;
     font-size: 1em;
-    color: #A67C52;
+    color: #333; /* Texte gris foncé */
 }
 
 /* Overlay */
@@ -62,8 +52,8 @@ i{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgb(244,237,225) ,rgba(212, 163, 115, 1));
-    color: #FFF;
+    background-color: rgba(50, 50, 50, 0.85); /* Fond gris foncé avec transparence */
+    color: #FFF; /* Texte blanc */
 }
 
 #overlay h1 {
@@ -74,16 +64,16 @@ i{
 
 .btnLink {
     margin-top: 20px;
-    background-color: #D4A373;
+    background-color: #666; /* Fond gris moyen */
     padding: 10px 20px;
-    color: #FFF;
+    color: #FFF; /* Texte blanc */
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
 }
 
 .btnLink:hover {
-    background-color: #A67C52;
+    background-color: #888; /* Plus clair au survol */
 }
 
 /* Section générale */
@@ -96,44 +86,49 @@ i{
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
+    background-image: linear-gradient(rgb(230,230,230), rgba(230,230,230,0.8)),url("images/kotel-vide-6110532.webp") ; /* Fond gris clair */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-
-
-#nomFr{
+#nomFr {
     font-family: 'Dancing Script', cursive;
     margin-bottom: 0.5em;
+    color: #333; /* Nom en gris foncé */
 }
 
-#nomHe{
-    font-family: 'Ozard_bold', cursive;
+#nomHe {
+    font-family: 'Rubik Dirt', cursive;
     margin-bottom: 1em;
-
+    color: #333; /* Nom en gris foncé */
 }
 
 .txt h1 {
     font-size: 2em;
-    color: #5D4037;
+    color: #333; /* Texte en gris foncé */
 }
 
 .txt h2 {
     font-size: 1.5em;
     margin-bottom: 1em;
+    color: #555; /* Texte gris moyen */
 }
 
 .txt h3 {
     font-size: 1.2em;
     margin-bottom: 0.5em;
+    color: #555; /* Texte gris moyen */
 }
 
 .txt p {
     font-size: 1em;
     margin-bottom: 2em;
+    color: #666; /* Texte gris moyen */
 }
 
 /* Styles du compte à rebours */
 #countdown {
-    background-color: #E9DBC1;
+    background-color: #E0E0E0; /* Fond gris clair */
     padding: 15px 0;
     height: 50vh;
     display: flex;
@@ -149,7 +144,7 @@ i{
 #svd {
     font-size: 2.5em;
     font-family: 'Great Vibes', cursive;
-    color: #5D4037;
+    color: #333; /* Texte en gris foncé */
 }
 
 #timer {
@@ -161,23 +156,26 @@ i{
 
 .tag .value {
     font-size: 2em;
-    color: #A67C52;
+    color: #333; /* Valeur en gris foncé */
 }
 
 .tag .label {
     font-size: 0.9em;
-    color: #5D4037;
+    color: #666; /* Labels en gris moyen */
 }
 
 /* Section Téfilines */
 .tefilines {
-    background-color: #F4EDE1;
-    height: 80vh;   
+    background-image: linear-gradient(rgb(230,230,230), rgba(242,242,242,0.8)),url("images/tefilines.jpeg") ; /* Fond gris très clair */
+    height: 80vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #en_tete {
@@ -198,26 +196,25 @@ i{
     padding: 0.5em;
     margin-top: 1.5em;
     text-align: center;
-
+    color: #333; /* Texte gris foncé */
 }
 
 .tefilines a {
     display: inline-block;
     margin-top: 1.5em;
     padding: 10px 15px;
-    background-color: #D4A373;
+    background-color: #666; /* Bouton gris moyen */
     color: white;
     border-radius: 5px;
-    
 }
 
 .tefilines a:hover {
-    background-color: #A67C52;
+    background-color: #888; /* Plus clair au survol */
 }
 
 /* Section Réception */
 .reception {
-    background-color: #E9DBC1;
+    background-image:linear-gradient(rgb(230,230,230), rgba(230,230,230,0.8)),url("images/gallery35-4-1536x1026.jpg") ; /* Fond gris clair */
     height: 110vh;
     display: flex;
     flex-direction: column;
@@ -228,45 +225,56 @@ i{
 
 .textReception {
     font-size: 1.5em;
+    color: #333; /* Texte gris foncé */
 }
 
-.header h2{
+.header h2 {
     top: 0;
     margin-top: 0.5em;
     margin-bottom: 2em;
     font-size: 2.5em;
+    color: #333; /* Texte gris foncé */
 }
 
 .reception h1 {
     font-size: 2em;
     margin: 15px 0;
+    color: #333; /* Texte gris foncé */
 }
 
-.text{
+.text {
     margin-bottom: 1.5em;
+    color: #666; /* Texte gris moyen */
 }
 
 .reception a {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background-color: #D4A373;
+    background-color: #666; /* Bouton gris moyen */
     color: white;
     border-radius: 5px;
 }
 
 .reception a:hover {
-    background-color: #A67C52;
+    background-color: #888; /* Plus clair au survol */
 }
 
 /* Section RSVP */
 .RSVP {
-    background-color: #F4EDE1;
+    background-color: #F2F2F2; /* Fond gris très clair */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    
 }
 
 .RSVP h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
+    color: #333; /* Texte gris foncé */
 }
 
 #RSVPform {
@@ -279,16 +287,18 @@ i{
 .names input, .checkBoxField input, .nbPers input, .MsgBm textarea {
     padding: 10px;
     width: 90%;
-    border: 1px solid #A67C52;
+    border: 1px solid #CCC; /* Bordures gris clair */
     border-radius: 5px;
     font-size: 1em;
+    background-color: #FFF; /* Fond blanc pour les champs de saisie */
+    color: #333; /* Texte en gris foncé */
 }
 
 .checkbox-wrapper-30 .checkbox {
-    --bg: #fff;
-    --brdr: #d1d6ee;
-    --brdr-actv: #1e2235;
-    --brdr-hovr: #bbc1e1;
+    --bg: #FFF;
+    --brdr: #CCC;
+    --brdr-actv: #333;
+    --brdr-hovr: #999;
     --dur: calc((var(--size, 2)/2) * 0.6s);
     display: inline-block;
     width: calc(var(--size, 1) * 22px);
@@ -304,15 +314,12 @@ i{
     position: absolute;
 }
 .checkbox-wrapper-30 .checkbox input {
-    appearance: none; 
-    -moz-appearance: none;
-    -webkit-tap-highlight-color: transparent;
+    appearance: none;
     cursor: pointer;
     background-color: var(--bg);
     border-radius: calc(var(--size, 1) * 4px);
     border: calc(var(--newBrdr, var(--size, 1)) * 1px) solid;
     color: var(--newBrdrClr, var(--brdr));
-    outline: none;
     margin: 0;
     padding: 0;
     transition: all calc(var(--dur) / 3) linear;
@@ -336,7 +343,7 @@ i{
     fill: none;
     left: 0;
     pointer-events: none;
-    stroke: var(--stroke, var(--border-active));
+    stroke: var(--stroke, var(--brdr-actv));
     stroke-dasharray: var(--dashArray, 93);
     stroke-dashoffset: var(--dashOffset, 94);
     stroke-linecap: round;
@@ -352,10 +359,10 @@ i{
     width: 100%;
 }
 
-
+/* Boutons */
 button {
     padding: 10px 20px;
-    background-color: #D4A373;
+    background-color: #666; /* Bouton gris moyen */
     color: white;
     border: none;
     border-radius: 5px;
@@ -363,7 +370,7 @@ button {
 }
 
 button:hover {
-    background-color: #A67C52;
+    background-color: #888; /* Plus clair au survol */
 }
 
 /* Assurer que toutes les sections prennent la hauteur de l'écran */
