@@ -115,6 +115,7 @@ i {
 
 #nomFr {
     font-family: 'Dancing Script', cursive;
+    font-weight: 700;
     margin-bottom: 0.5em;
     color: #333; /* Nom en gris foncé */
 }
@@ -278,7 +279,7 @@ i {
 
 .text {
     margin-bottom: 1.5em;
-    color: #666; /* Texte gris moyen */
+    color: #444; /* Texte gris moyen */
 }
 
 .reception a {
