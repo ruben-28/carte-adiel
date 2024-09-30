@@ -1,444 +1,474 @@
-/* Styles généraux pour mobile */
-body {
-    font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
-    background-color: #F2F2F2; /* Fond gris très clair */
-    color: #333; /* Texte gris foncé */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
+@media (max-width: 768px) {
 
-h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #333; /* Liens gris foncé */
-}
-
-a:hover {
-    color: #666; /* Lien gris moyen au survol */
-}
-
-/* Classe pour désactiver le défilement */
-.no-scroll {
-    overflow: hidden;
-    height: 100vh; /* Empêche le défilement vertical */
-}
-
-i {
-    padding: 0 10px;
-}
-
-/* Positionner le BSD dans l'angle supérieur droit */
-.bsd {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1em;
-    color: #333; /* Texte gris foncé */
-}
-
-/* Overlay */
-#overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-image:linear-gradient(rgb(50,50,50),rgba(50, 50, 50, 0.1)), url("images/seferTorah.jpg") ; /* Fond gris foncé avec transparence */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #FFF; /* Texte blanc */
-}
-
-#overlay h1 {
-    font-size: 3em;
-    line-height: 1.5em;
-    letter-spacing: 0.1em;
-    font-family: 'Pinyon Script', cursive;
-}
-
-.btnLink {
-    margin-top: 20px;
-    background-color: #666; /* Fond gris moyen */
-    padding: 10px 20px;
-    color: #FFF; /* Texte blanc */
-    border-radius: 5px;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-.btnLink i {
-    display: inline-block;
-    transition: transform 0.5s ease;
-}
-
-.btnLink.animate i {
-    animation: slideArrow 0.5s forwards; /* Lance l'animation quand la classe 'animate' est ajoutée */
-}
-
-@keyframes slideArrow {
-    0% {
-        transform: translateX(0); /* Début à gauche */
+    
+    /* Styles généraux pour mobile */
+    body {
+        font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
+        background-color: #F2F2F2; /* Fond gris très clair */
+        color: #333; /* Texte gris foncé */
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
-    100% {
-        transform: translateX(100px); /* Glisse vers la droite */
+    
+    h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
     }
-}
-
-.btnLink:hover {
-    background-color: #888; /* Plus clair au survol */
-}
-
-/* Section générale */
-.overView {
-    gap: 1em;
-    text-align: center;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    background-image: linear-gradient(rgb(230,230,230), rgba(230,230,230,0.4)),url("images/kotel-vide-6110532.webp") ; /* Fond gris clair */
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#nomFr {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 700;
-    margin-bottom: 0.5em;
-    color: #333; /* Nom en gris foncé */
-}
-
-#nomHe {
-    font-family: 'Rubik Dirt', cursive;
-    margin-bottom: 1em;
-    color: #333; /* Nom en gris foncé */
-}
-
-.txt h1 {
-    font-size: 2em;
-    color: #333; /* Texte en gris foncé */
-}
-
-.txt h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    color: #555; /* Texte gris moyen */
-}
-
-.txt h3 {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-    color: #555; /* Texte gris moyen */
-}
-
-.txt p {
-    font-size: 1em;
-    margin-bottom: 2em;
-    color: #666; /* Texte gris moyen */
-}
-
-/* Styles du compte à rebours */
-#countdown {
-    background-color: #E0E0E0; /* Fond gris clair */
-    padding: 15px 0;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.text-container {
-    text-align: center;
-    margin-bottom: 2em;
-}
-
-#svd {
-    font-size: 2.5em;
-    font-family: 'Great Vibes', cursive;
-    color: #333; /* Texte en gris foncé */
-}
-
-#timer {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 15px;
-}
-
-.tag .value {
-    font-size: 2em;
-    color: #333; /* Valeur en gris foncé */
-}
-
-.tag .label {
-    font-size: 0.9em;
-    color: #666; /* Labels en gris moyen */
-}
-
-/* Section Téfilines */
-.tefilines {
-    background-image: linear-gradient(rgb(230,230,230), rgba(230,230,230,0.5)),url("images/tefilines.jpeg") ; /* Fond gris très clair */
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#en_tete {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 0;
-}
-
-#en_tete img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-#txt_tef {
-    font-size: 1.5em;
-    padding: 0.5em;
-    margin-top: 1.5em;
-    text-align: center;
-    color: #333; /* Texte gris foncé */
-}
-
-.tefilines a {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1.5em;
-    padding: 10px 15px;
-    background-color: #666; /* Bouton gris moyen */
-    color: white;
-    border-radius: 5px;
-    width: 35vw;
-    height: 5vh;
-}
-
-.tefilines a:hover {
-    background-color: #888; /* Plus clair au survol */
-}
-
-/* Section Réception */
-.reception {
-    background-image:linear-gradient(rgb(230,230,230), rgba(230,230,230,0.6)),url("images/gallery35-4-1536x1026.jpg") ; /* Fond gris clair */
-    height: 110vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-}
-
-
-.textReception {
-    font-size: 1.5em;
-    color: #ffffff; /* Texte gris foncé */
-}
-
-.header h2 {
-    position: relative;
-    top: 0; /* Assure que le h2 est au sommet */
-    margin-bottom: 0.5em; /* Réduit la marge inférieure */
-    font-size: 3.5em; /* Agrandir la taille de la police */
-    color: #333; /* Texte gris foncé */
-    text-align: center;
-    font-family: 'Great Vibes', cursive; /* Police élégante */
-}
-
-.reception h1 {
-    font-size: 2em;
-    margin: 15px 0;
-    color: #333; /* Texte gris foncé */
-}
-
-.text {
-    margin-bottom: 1.5em;
-    color: #444; /* Texte gris moyen */
-}
-
-.reception a {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1.5em;
-    padding: 10px 15px;
-    background-color: #666; /* Bouton gris moyen */
-    color: white;
-    border-radius: 5px;
-    width: 35vw;
-    height: 5vh;
-}
-
-.reception a:hover {
-    background-color: #888; /* Plus clair au survol */
-}
-
-/* Section RSVP */
-.RSVP {
-    background-color: #F2F2F2; /* Fond gris très clair */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    height: 80vh;
-}
-
-.RSVP h2 {
-    position: relative;
-    top: 0; /* Assure que le h2 est au sommet */
-    margin-bottom: 0.5em; /* Réduit la marge inférieure */
-    font-size: 3.5em; /* Agrandir la taille de la police */
-    color: #333; /* Texte gris foncé */
-    text-align: center;
-    font-family: 'Great Vibes', cursive; /* Police élégante */
-}
-
-#RSVPform {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-}
-
-input[type="text"], input[type="email"], input[type="number"], textarea {
-    margin-bottom: 1em;
+    
+    a {
+        text-decoration: none;
+        color: #333; /* Liens gris foncé */
+    }
+    
+    a:hover {
+        color: #666; /* Lien gris moyen au survol */
+    }
+    
+    /* Classe pour désactiver le défilement */
+    .no-scroll {
+        overflow: hidden;
+        height: 100vh; /* Empêche le défilement vertical */
+    }
+    
+    i {
+        padding: 0 10px;
+    }
+    
+    /* Positionner le BSD dans l'angle supérieur droit */
+    .bsd {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1em;
+        color: #333; /* Texte gris foncé */
+    }
+    
+    /* Overlay */
+    #overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-image:linear-gradient(rgb(50,50,50),rgba(50, 50, 50, 0.1)), url("images/seferTorah.jpg") ; /* Fond gris foncé avec transparence */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #FFF; /* Texte blanc */
+    }
+    
+    #overlay h1 {
+        font-size: 3em;
+        line-height: 1.5em;
+        letter-spacing: 0.1em;
+        font-family: 'Pinyon Script', cursive;
+    }
+    
+    .btnLink {
+        margin-top: 20px;
+        background-color: #666; /* Fond gris moyen */
+        padding: 10px 20px;
+        color: #FFF; /* Texte blanc */
+        border-radius: 5px;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    
+    .btnLink i {
+        display: inline-block;
+        transition: transform 0.5s ease;
+    }
+    
+    .btnLink.animate i {
+        animation: slideArrow 0.5s forwards; /* Lance l'animation quand la classe 'animate' est ajoutée */
+    }
+    
+    @keyframes slideArrow {
+        0% {
+            transform: translateX(0); /* Début à gauche */
+        }
+        100% {
+            transform: translateX(100px); /* Glisse vers la droite */
+        }
+    }
+    
+    .btnLink:hover {
+        background-color: #888; /* Plus clair au survol */
+    }
+    
+    /* Section générale */
+    .overView {
+        gap: 1em;
+        text-align: center;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        background-image: linear-gradient(rgb(230,230,230), rgba(230,230,230,0.4)),url("images/kotel-vide-6110532.webp") ; /* Fond gris clair */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #nomFr {
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        color: #333; /* Nom en gris foncé */
+    }
+    
+    #nomHe {
+        font-family: 'Rubik Dirt', cursive;
+        margin-bottom: 1em;
+        color: #333; /* Nom en gris foncé */
+    }
+    
+    .txt h1 {
+        font-size: 2em;
+        color: #333; /* Texte en gris foncé */
+    }
+    
+    .txt h2 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        color: #555; /* Texte gris moyen */
+    }
+    
+    .txt h3 {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+        color: #555; /* Texte gris moyen */
+    }
+    
+    .txt p {
+        font-size: 1em;
+        margin-bottom: 2em;
+        color: #666; /* Texte gris moyen */
+    }
+    
+    /* Styles du compte à rebours */
+    #countdown {
+        background-color: #E0E0E0; /* Fond gris clair */
+        padding: 15px 0;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .text-container {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    
+    #svd {
+        font-size: 2.5em;
+        font-family: 'Great Vibes', cursive;
+        color: #333; /* Texte en gris foncé */
+    }
+    
+    #timer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .tag .value {
+        font-size: 2em;
+        color: #333; /* Valeur en gris foncé */
+    }
+    
+    .tag .label {
+        font-size: 0.9em;
+        color: #666; /* Labels en gris moyen */
+    }
+    
+    /* Section Téfilines */
+    .tefilines {
+        background-image: linear-gradient(rgb(230,230,230), rgba(230,230,230,0.5)),url("images/tefilines.jpeg") ; /* Fond gris très clair */
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #en_tete {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 0;
+    }
+    
+    #en_tete img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    #txt_tef {
+        font-size: 1.5em;
+        padding: 0.5em;
+        margin-top: 1.5em;
+        text-align: center;
+        color: #333; /* Texte gris foncé */
+    }
+    
+    .tefilines a {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5em;
+        padding: 10px 15px;
+        background-color: #666; /* Bouton gris moyen */
+        color: white;
+        border-radius: 5px;
+        width: 35vw;
+        height: 5vh;
+    }
+    
+    .tefilines a:hover {
+        background-color: #888; /* Plus clair au survol */
+    }
+    
+    /* Section Réception */
+    .reception {
+        background-image:linear-gradient(rgb(230,230,230), rgba(230,230,230,0.6)),url("images/gallery35-4-1536x1026.jpg") ; /* Fond gris clair */
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+    }
+    
+    
+    .textReception {
+        font-size: 1.5em;
+        color: #ffffff; /* Texte gris foncé */
+    }
+    
+    .header h2 {
+        position: relative;
+        top: 0; /* Assure que le h2 est au sommet */
+        margin-bottom: 0.5em; /* Réduit la marge inférieure */
+        font-size: 3.5em; /* Agrandir la taille de la police */
+        color: #333; /* Texte gris foncé */
+        text-align: center;
+        font-family: 'Great Vibes', cursive; /* Police élégante */
+    }
+    
+    .reception h1 {
+        font-size: 2em;
+        margin: 15px 0;
+        color: #333; /* Texte gris foncé */
+    }
+    
+    .text {
+        margin-bottom: 1.5em;
+        color: #444; /* Texte gris moyen */
+    }
+    
+    .reception a {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5em;
+        padding: 10px 15px;
+        background-color: #666; /* Bouton gris moyen */
+        color: white;
+        border-radius: 5px;
+        width: 35vw;
+        height: 5vh;
+    }
+    
+    .reception a:hover {
+        background-color: #888; /* Plus clair au survol */
+    }
+    
+    /* Section RSVP */
+    .RSVP {
+        background-color: #F2F2F2; /* Fond gris très clair */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        height: 80vh;
+    }
+    
+    .RSVP h2 {
+        position: relative;
+        top: 0; /* Assure que le h2 est au sommet */
+        margin-bottom: 0.5em; /* Réduit la marge inférieure */
+        font-size: 3.5em; /* Agrandir la taille de la police */
+        color: #333; /* Texte gris foncé */
+        text-align: center;
+        font-family: 'Great Vibes', cursive; /* Police élégante */
+    }
+    
+    #RSVPform {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+    
+    input[type="text"], input[type="email"], input[type="number"], textarea {
+        margin-bottom: 1em;
+        
+    }
+    
+    .checkBoxField {
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+    
+    #msg {
+        height: 40%;
+    }
+    
+    .names input, .checkBoxField input, .nbPers input, .MsgBm textarea {
+        padding: 10px;
+        width: 90%;
+        border: 1px solid #CCC; /* Bordures gris clair */
+        border-radius: 5px;
+        font-size: 1em;
+        background-color: #FFF; /* Fond blanc pour les champs de saisie */
+        color: #333; /* Texte en gris foncé */
+    }
+    
+    .checkbox-wrapper-30 .checkbox {
+        --bg: #FFF;
+        --brdr: #CCC;
+        --brdr-actv: #333;
+        --brdr-hovr: #999;
+        --dur: calc((var(--size, 2)/2) * 0.6s);
+        display: inline-block;
+        width: calc(var(--size, 1) * 22px);
+        position: relative;
+    }
+    .checkbox-wrapper-30 .checkbox:after {
+        content: "";
+        width: 100%;
+        padding-top: 100%;
+        display: block;
+    }
+    .checkbox-wrapper-30 .checkbox > * {
+        position: absolute;
+    }
+    .checkbox-wrapper-30 .checkbox input {
+        appearance: none;
+        cursor: pointer;
+        background-color: var(--bg);
+        border-radius: calc(var(--size, 1) * 4px);
+        border: calc(var(--newBrdr, var(--size, 1)) * 1px) solid;
+        color: var(--newBrdrClr, var(--brdr));
+        margin: 0;
+        padding: 0;
+        transition: all calc(var(--dur) / 3) linear;
+    }
+    .checkbox-wrapper-30 .checkbox input:hover,
+    .checkbox-wrapper-30 .checkbox input:checked {
+        --newBrdr: calc(var(--size, 1) * 2);
+    }
+    .checkbox-wrapper-30 .checkbox input:hover {
+        --newBrdrClr: var(--brdr-hovr);
+    }
+    .checkbox-wrapper-30 .checkbox input:checked {
+        --newBrdrClr: var(--brdr-actv);
+        transition-delay: calc(var(--dur) /1.3);
+    }
+    .checkbox-wrapper-30 .checkbox input:checked + svg {
+        --dashArray: 16 93;
+        --dashOffset: 109;
+    }
+    .checkbox-wrapper-30 .checkbox svg {
+        fill: none;
+        left: 0;
+        pointer-events: none;
+        stroke: var(--stroke, var(--brdr-actv));
+        stroke-dasharray: var(--dashArray, 93);
+        stroke-dashoffset: var(--dashOffset, 94);
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        top: 0;
+        transition: stroke-dasharray var(--dur), stroke-dashoffset var(--dur);
+    }
+    .checkbox-wrapper-30 .checkbox svg,
+    .checkbox-wrapper-30 .checkbox input {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    
+    /* Boutons */
+    button {
+        padding: 10px 20px;
+        background-color: #666; /* Bouton gris moyen */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        width: 35vw;
+        height: 5vh;
+    }
+    
+    button:hover {
+        background-color: #888; /* Plus clair au survol */
+    }
+    
+    /* Assurer que toutes les sections prennent la hauteur de l'écran */
+    section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   
+    .Video {
+        position: relative;
+        width: 100%;
+        height: 60vh; /* Ajustez la hauteur en fonction de vos besoins */
+        overflow: hidden;
+        margin: 10px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    }
+    
+    .Video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Assure que la vidéo remplit bien l'espace de la div sans déformation */
+    }
+    
+   
+    
+    
+    
     
 }
-
-.checkBoxField {
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-
-#msg {
-    height: 40%;
-}
-
-.names input, .checkBoxField input, .nbPers input, .MsgBm textarea {
-    padding: 10px;
-    width: 90%;
-    border: 1px solid #CCC; /* Bordures gris clair */
-    border-radius: 5px;
-    font-size: 1em;
-    background-color: #FFF; /* Fond blanc pour les champs de saisie */
-    color: #333; /* Texte en gris foncé */
-}
-
-.checkbox-wrapper-30 .checkbox {
-    --bg: #FFF;
-    --brdr: #CCC;
-    --brdr-actv: #333;
-    --brdr-hovr: #999;
-    --dur: calc((var(--size, 2)/2) * 0.6s);
-    display: inline-block;
-    width: calc(var(--size, 1) * 22px);
-    position: relative;
-}
-.checkbox-wrapper-30 .checkbox:after {
-    content: "";
-    width: 100%;
-    padding-top: 100%;
-    display: block;
-}
-.checkbox-wrapper-30 .checkbox > * {
-    position: absolute;
-}
-.checkbox-wrapper-30 .checkbox input {
-    appearance: none;
-    cursor: pointer;
-    background-color: var(--bg);
-    border-radius: calc(var(--size, 1) * 4px);
-    border: calc(var(--newBrdr, var(--size, 1)) * 1px) solid;
-    color: var(--newBrdrClr, var(--brdr));
-    margin: 0;
-    padding: 0;
-    transition: all calc(var(--dur) / 3) linear;
-}
-.checkbox-wrapper-30 .checkbox input:hover,
-.checkbox-wrapper-30 .checkbox input:checked {
-    --newBrdr: calc(var(--size, 1) * 2);
-}
-.checkbox-wrapper-30 .checkbox input:hover {
-    --newBrdrClr: var(--brdr-hovr);
-}
-.checkbox-wrapper-30 .checkbox input:checked {
-    --newBrdrClr: var(--brdr-actv);
-    transition-delay: calc(var(--dur) /1.3);
-}
-.checkbox-wrapper-30 .checkbox input:checked + svg {
-    --dashArray: 16 93;
-    --dashOffset: 109;
-}
-.checkbox-wrapper-30 .checkbox svg {
-    fill: none;
-    left: 0;
-    pointer-events: none;
-    stroke: var(--stroke, var(--brdr-actv));
-    stroke-dasharray: var(--dashArray, 93);
-    stroke-dashoffset: var(--dashOffset, 94);
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 2px;
-    top: 0;
-    transition: stroke-dasharray var(--dur), stroke-dashoffset var(--dur);
-}
-.checkbox-wrapper-30 .checkbox svg,
-.checkbox-wrapper-30 .checkbox input {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-
-/* Boutons */
-button {
-    padding: 10px 20px;
-    background-color: #666; /* Bouton gris moyen */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    width: 35vw;
-    height: 5vh;
-}
-
-button:hover {
-    background-color: #888; /* Plus clair au survol */
-}
-
-/* Assurer que toutes les sections prennent la hauteur de l'écran */
-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    
+    
+    
+    
+    

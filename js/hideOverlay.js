@@ -10,4 +10,8 @@ function hideOverlay() {
         document.getElementById('overlay').style.display = 'none';
         document.body.classList.remove('no-scroll'); // Permet de scroller après avoir caché l'overlay
     }, 250); // Correspond à la durée de l'animation (0.5s)
+
+
+    var video = document.getElementById("clip");
+    video.play();
 }
